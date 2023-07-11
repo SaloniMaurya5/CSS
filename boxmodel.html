@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        
+        .content-box{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 20px;
+            box-sizing: content-box;
+            /* Total width: 200px + (2 * 20px) + (2 * 5px) = 250px
+            Total height: 200px + (2 * 20px) + (2 * 5px) = 250px
+            Content box width: 200px
+            Content box height: 200px  */
+        }
+        .border-box{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 20px;
+            box-sizing: border-box;
+              /* Total width: 200px - (2 * 20px) - (2 * 5px) = 150px
+            Total height: 200px - (2 * 20px) - (2 * 5px) = 150px
+            Content box width: 200px
+            Content box height: 200px  */
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, repellat!</div>
+    <div class="border-box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, repellendus.</div>
+</body>
+</html>

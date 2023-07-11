@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Padding</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .Margin{
+            border: 1px solid black;
+            color: black;
+            background-color:lightblue;
+            margin: 100px;   
+            /* All Side 100px */ 
+            margin: 100px 300px;   
+            /* Top-Bottom = 100px ,  Left-Right = 300px */ 
+            margin: 100px 300px 500px;   
+            /* Top = 100px ,  Left-Right = 300px , Bottom = 500px */ 
+            margin: 100px 300px 500px 600px;  
+            /* Top = 100px ,  Left-Right = 300px , Bottom = 500px, Left = 600px */ 
+            
+        }
+        .Padding{
+            border: 5px solid #fff;
+            color: #fff;
+            background-color: darkred;
+            padding: 100px;   
+            /* All Side 100px */ 
+            padding: 100px 300px;   
+            /* Top-Bottom = 100px ,  Left-Right = 300px */ 
+            padding: 100px 300px 500px;   
+            /* Top = 100px ,  Left-Right = 300px , Bottom = 500px */ 
+            padding: 100px 300px 500px 600px;   
+            /* Top = 100px ,  Left-Right = 200px , Bottom = 300px, Left = 400px */ 
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="Padding">Cake is often served as a celebratory dish on ceremonial occasions, such as
+        weddings, anniversaries, and birthdays.</div>
+    <hr>
+    <div class="Margin">Cake is often served as a celebratory dish on ceremonial occasions, such as
+        weddings, anniversaries, and birthdays.</div>
+</body>
+</html>
